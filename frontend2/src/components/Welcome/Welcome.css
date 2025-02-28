@@ -1,0 +1,74 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/* Centering Fix */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  max-width: 800px;
+  text-align: center;
+  height: 100vh;
+  /* Ensures full vertical centering */
+}
+
+/* Header */
+.welcome-header {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title */
+.welcome-title {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff007a, #6200ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.welcome-subtitle {
+  font-size: 2rem;
+  color: #bbbbbb;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.welcome-description {
+  font-size: 1.3rem;
+  color: #dddddd;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.next-button {
+  background: linear-gradient(90deg, #ff007a, #6200ea);
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.next-button:hover {
+  opacity: 0.8;
+}

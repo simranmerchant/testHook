@@ -1,0 +1,161 @@
+/* Overall Layout */
+.liquidity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 60vh;
+    border-radius: 12px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Step Box */
+.step-box {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #bbbbbb;
+    background: #222;
+    border: 2px solid #444;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Step 2 (Now same as other steps, no gradient) */
+.step-box.active {
+    background: #333;
+    /* Dark background instead of gradient */
+    border-color: #555;
+    color: white;
+}
+
+/* Main Box */
+.main-box {
+    width: 50vw;
+    height: 55vh;
+    border: 2px solid #333;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: #1a1a1a;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Title */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Chart */
+.chart-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chart-img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #333;
+}
+
+/* Price Range */
+.price-range {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 20px;
+}
+
+.price-box {
+    flex: 1;
+    background: #222;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid #444;
+}
+
+.price-label {
+    font-size: 16px;
+    color: #bbbbbb;
+}
+
+.price-input {
+    width: 80%;
+    padding: 8px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background: #121212;
+    color: white;
+    margin: 10px 0;
+}
+
+.price-desc {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Buttons */
+.button-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-button {
+    width: 45%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    background: #333;
+    color: white;
+    border: 2px solid #555;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #444;
+}
+
+/* Keep Gradient Only on Continue Button */
+.continue-button {
+    width: 45%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff007a, #6200ea);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.continue-button:hover {
+    opacity: 0.8;
+}
