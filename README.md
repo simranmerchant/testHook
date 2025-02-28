@@ -16,10 +16,15 @@
 
 ## 2. Architecture
 
-### 🔗 Contract Interactions:
-- **BaseHook**: Inherited by RestakingHook to manage the liquidity.
-- **Uniswap v4 PoolManager**: Interacts with Uniswap's pool to add/remove liquidity.
-- **Restaking contracts (Lido)**: Interacts with external restaking contracts to maximize yield generation from idle ETH.
+### Smart Contracts
+- **RestakingHook.sol**: Smart Contract for liquidity management
+- **PoolKeyETHUSDC.sol**: Schema for PoolKey
+
+### Frontend
+- 
+
+
+
 
 ### 📊 Data Structures Used:
 - **PoolKey**: Identifies the liquidity pool.
