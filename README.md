@@ -35,24 +35,7 @@
 - **Increased Transparency**: The integration with restaking contracts (e.g., Lido) ensures that LPs can track their rewards and liquidity status with full transparency.
 - **Efficient Liquidity Utilization**: Idle liquidity is redirected into yield-generating contracts, improving the efficiency of capital use in the ecosystem.
 
-## 4. Architecture
-
-### Contract interactions:
-- **BaseHook**: Inherited by RestakingHook to manage the liquidity.
-- **Uniswap v4 PoolManager**: Interacts with Uniswap's pool to add/remove liquidity.
-- **Restaking contracts (Lido)**: Interacts with external restaking contracts to maximize yield generation from idle ETH.
-
-### Data structures used:
-- **PoolKey**: Identifies the liquidity pool.
-- **IPoolManager.ModifyLiquidityParams**: Parameters for liquidity adjustments.
-- **Position**: Tracks user liquidity and restaking data.
-
-### How liquidity, fees, and rewards are managed:
-- Liquidity is added or removed based on the pool’s activity.
-- ETH is restaked automatically when not in use.
-- Rewards from restaked ETH are tracked and distributed to LPs.
-
-## 5. Example Workflow
+## 4. Example Workflow
 
 1. A liquidity provider deposits ETH into a Uniswap v4 pool.
 2. The liquidity provider's position becomes inactive due to low pool activity.
@@ -61,7 +44,7 @@
 5. Rewards from restaked ETH are generated and automatically redistributed back to the liquidity provider.
 6. The liquidity provider can see the rewards and status of their position via the platform's dashboard.
 
-## 6. Future Improvements
+## 5. Future Improvements
 
 - **Support for Other Restaking Contracts**: Expand compatibility with other restaking contracts to offer users more options.
 - **Advanced Reward Models**: Implement more dynamic reward models to better simulate different APR scenarios and ensure fair distribution.
