@@ -32,7 +32,7 @@
 
 - **Maximized Yield**: By restaking idle liquidity, users earn additional rewards from their ETH even when it isn't actively contributing to a liquidity pool.
 - **Automated Process**: The restaking of ETH happens automatically, reducing manual intervention for liquidity providers and ensuring they are always earning.
-- **Increased Transparency**: The integration with restaking contracts (e.g., Lido) ensures that LPs can track their rewards and liquidity status with full transparency.
+- **Increased Transparency**: Future integration with AVS ensures that LPs can track their rewards and liquidity status with full transparency.
 - **Efficient Liquidity Utilization**: Idle liquidity is redirected into yield-generating contracts, improving the efficiency of capital use in the ecosystem.
 
 
