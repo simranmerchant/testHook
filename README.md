@@ -32,7 +32,7 @@
 ### Technology/Frameworks Used:
 **Solidity** **JavaScript** **React** **HTML** **CSS** **P2P**
 
-## 3. 💸 Benefits
+##  💸 3. Benefits
 
 - **Maximized Yield**: By restaking idle liquidity, users earn additional rewards from their ETH even when it isn't actively contributing to a liquidity pool.
 - **Automated Process**: The restaking of ETH happens automatically, reducing manual intervention for liquidity providers and ensuring they are always earning.
