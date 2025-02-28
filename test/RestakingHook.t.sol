@@ -39,9 +39,9 @@ contract RestakingHookTest is Test, Fixtures {
 
         // Deploy the hook contract
         address flags = address(uint160(Hooks.BEFORE_ADD_LIQUIDITY_FLAG));
-        bytes memory constructorArgs = abi.encode(address(manager));
+        bytes memory constructorArgs = abi.encode(manager); //Add all the necessary constructor arguments from the hook
         deployCodeTo("RestakingHook.sol:RestakingHook", constructorArgs, flags);
-        hook = new RestakingHook(manager);
+        hook = RestakingHook(flags);
 
         // Initialize the pool
         key = PoolKey(currency0, currency1, 3000, 60, IHooks(hook));
@@ -71,7 +71,7 @@ contract RestakingHookTest is Test, Fixtures {
             ZERO_BYTES
         );
 
-        // Verify that the contract owns the liquidity tokens
+        // Verify ,that the contract owns the liquidity tokens
         uint256 contractLiquidity = manager.getLiquidity(poolId);
         assertEq(contractLiquidity, uint256(liquidityAmount), "Contract does not own the liquidity tokens");
     }
