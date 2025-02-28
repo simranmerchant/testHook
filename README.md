@@ -35,7 +35,19 @@
 - **Increased Transparency**: The integration with restaking contracts (e.g., Lido) ensures that LPs can track their rewards and liquidity status with full transparency.
 - **Efficient Liquidity Utilization**: Idle liquidity is redirected into yield-generating contracts, improving the efficiency of capital use in the ecosystem.
 
-## 4. Example Workflow
+
+## 📌 4. How It Works (Use Cases) ##
+Explain step-by-step how the contract behaves in different situations.
+💡 Example Use Case: Adding Liquidity
+1️⃣ User provides ETH & USDC in a Uniswap pool.
+2️⃣ Contract checks if the position is active or inactive.
+If active, liquidity is added normally.
+If inactive, ETH is diverted to restaking.
+3️⃣ The user's position and rewards are updated.
+4️⃣ Restaked ETH generates yield over time, which is later distributed.
+Provide flow diagrams or example transactions for clarity.
+
+## 5. Example Workflow
 
 1. A liquidity provider deposits ETH into a Uniswap v4 pool.
 2. The liquidity provider's position becomes inactive due to low pool activity.
@@ -44,8 +56,10 @@
 5. Rewards from restaked ETH are generated and automatically redistributed back to the liquidity provider.
 6. The liquidity provider can see the rewards and status of their position via the platform's dashboard.
 
-## 5. Future Improvements
+## 6. Future Improvements
 
-- **Support for Other Restaking Contracts**: Expand compatibility with other restaking contracts to offer users more options.
-- **Advanced Reward Models**: Implement more dynamic reward models to better simulate different APR scenarios and ensure fair distribution.
-- **Enhanced Analytics**: Provide deeper analytics for LPs to monitor the performance of their restaked liquidity, including detailed yield reports and comparisons across multiple restaking options.
+Our goal: Making liquidity providing profitable in any market condition
+
+Integration with Othentic’s AVS component ensures transparent and verifiable liquidity management, proving that user funds are handled securely and in accordance with our operational standards.
+Flash Accounting automatically returns liquidity to the pool as soon as the user's range is active, ensuring a seamless and instant liquidity management experience.
+
