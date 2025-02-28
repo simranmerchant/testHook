@@ -7,3 +7,4 @@ v4-core/=lib/v4-core/
 v4-periphery/=lib/v4-periphery/
 @openzeppelin/=lib/v4-core/lib/openzeppelin-contracts/
 @openzeppelin/uniswap-hooks=lib/uniswap-hooks/
+@chainlink/=lib/chainlink/contracts/
