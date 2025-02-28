@@ -1,3 +1,12 @@
+# RestakingHook
+
+## 1. Overview
+
+**RestakingHook** is a Uniswap v4 Hook that automatically restakes ETH when a liquidity position is inactive. It enhances yield generation by diverting idle ETH to a restaking contract and redistributing rewards to LPs based on a simulated APR model.
+
+### 🌟 Problem It Solves:
+- Ensures idle liquidity is effectively utilized, generating rewards even when liquidity positions are inactive.
+
 
 - It ensures that idle liquidity is effectively utilized, generating rewards even when liquidity positions are inactive.
 
