@@ -21,10 +21,13 @@
 - **PoolKeyETHUSDC.sol**: Schema for PoolKey
 
 ### Frontend
-- 
+- **Welcome** Folder: Home Screen
+- **Onboarding** Folder: Steps 1-3 for imputing/viewing liquidity positions
+- **UserStatistics** Folder: Dashboard for positions, lp fees accumulated, restaking rewards, and currently active/inactive of postions
 
-
-
+### Tests
+- **RestakingHook.t.sol**v (IP): Check for liquidty management and integration with Uniswap
+- **stake.test.js**: Checks for when we hit 32ETH before staking liquidity
 
 ### 📊 Data Structures Used:
 - **PoolKey**: Identifies the liquidity pool.
@@ -53,7 +56,6 @@ If active, liquidity is added normally.
 If inactive, ETH is diverted to restaking.
 3️⃣ The user's position and rewards are updated.
 4️⃣ Restaked ETH generates yield over time, which is later distributed.
-Provide flow diagrams or example transactions for clarity.
 
 ## 🛠️ 5. Example Workflow
 
@@ -69,5 +71,6 @@ Provide flow diagrams or example transactions for clarity.
 Our goal: Making liquidity providing profitable in any market condition
 
 Integration with Othentic’s AVS component ensures transparent and verifiable liquidity management, proving that user funds are handled securely and in accordance with our operational standards.
+
 Flash Accounting automatically returns liquidity to the pool as soon as the user's range is active, ensuring a seamless and instant liquidity management experience.
 
