@@ -29,15 +29,8 @@
 - **RestakingHook.t.sol**v (IP): Check for liquidty management and integration with Uniswap
 - **stake.test.js**: Checks for when we hit 32ETH before staking liquidity
 
-### 📊 Data Structures Used:
-- **PoolKey**: Identifies the liquidity pool.
-- **IPoolManager.ModifyLiquidityParams**: Parameters for liquidity adjustments.
-- **Position**: Tracks user liquidity and restaking data.
-
-### 🏦 How Liquidity, Fees, and Rewards Are Managed:
-- Liquidity is added or removed based on the pool’s activity.
-- ETH is restaked automatically when not in use.
-- Rewards from restaked ETH are tracked and distributed to LPs.
+### Technology/Frameworks Used:
+**Solidity** **JavaScript** **React** **HTML** **CSS** **P2P**
 
 ## 3. 💸 Benefits
 
